@@ -27,8 +27,8 @@ public:
 	void SetCollisionLayer(COLLISION_LAYER_TYPE layer) { _collisionLayer = layer; }
 	COLLISION_LAYER_TYPE GetCollisionLayer() { return _collisionLayer; }
 	
-	void ResetCollisionFlag() { _collisionFlag = 0; }
-	void AddCollisionFlagLayer(COLLISION_LAYER_TYPE layer);
+	void ResetCollisionFlag() { _collisionFlag = 0; }	// 아무 래이어와도 충돌하지 않겠다.
+	void AddCollisionFlagLayer(COLLISION_LAYER_TYPE layer);		// 충돌 레이어를 설정하겠다. 
 	void RemoveCollisionFlagLayer(COLLISION_LAYER_TYPE layer);
 	void SetCollisionFlag(uint32 flag) { _collisionFlag = flag; }
 	uint32 GetCollisionFlag() { return _collisionFlag; }

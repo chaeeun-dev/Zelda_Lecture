@@ -46,7 +46,7 @@ void BoxCollider::Render(HDC hdc)
 
 bool BoxCollider::CheckCollision(Collider* other)
 {
-	if (Super::CheckCollision(other) == false)
+	if (Super::CheckCollision(other) == false)		// 애초에 충돌을 원하지 않으면 바로 skip
 		return false;
 
 	switch (other->GetColliderType())

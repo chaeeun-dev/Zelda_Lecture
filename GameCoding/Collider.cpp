@@ -32,7 +32,7 @@ void Collider::Render(HDC hdc)
 bool Collider::CheckCollision(Collider* other)
 {
 	uint8 layer = other->GetCollisionLayer();
-	if (_collisionFlag & (1 << layer))
+	if (_collisionFlag & (1 << layer))		// 내 flag에서 상대방 것이 켜져 있는가 확인
 		return true;
 
 	return false;
