@@ -30,7 +30,7 @@ private:
 	virtual void TickMove();
 	virtual void TickSkill();
 
-	void SetState(PlayerState state);
+	void SetState(PlayerState state);	// state 바꿀 때 함수로 만들어서 사용하기 - 무작정 _state = PlayerState::MoveGround; 이렇게 작성하지 말라는 것! 디버깅할 때 이 함수에 중단점만 걸면 다 걸림
 	void SetDir(Dir dir);
 
 	void UpdateAnimation();
