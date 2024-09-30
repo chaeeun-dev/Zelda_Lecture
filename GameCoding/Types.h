@@ -152,12 +152,12 @@ struct VectorInt
 		return (float)::sqrt(LengthSquared());
 	}
 
-	int32 Dot(VectorInt other)
+	int32 Dot(VectorInt other)		// 내적
 	{
 		return x * other.x + y * other.y;
 	}
 
-	int32 Cross(VectorInt other)
+	int32 Cross(VectorInt other)	// 외적
 	{
 		return x * other.y - y * other.x;
 	}
